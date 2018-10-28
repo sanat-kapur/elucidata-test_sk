@@ -1,4 +1,4 @@
-library(ggplot2)
+#library(ggplot2)
 
 #metadata_filepath = "/Users/sanatkapur/OneDrive/Documents/ProgrammingProjects/elucidata_assignment/Assignment-2 Meta data sheet (2) (1) (1) (1).csv"
 
@@ -42,7 +42,7 @@ pca_plot = function(metadata_file, gene_data_file) {
   return(plot)
 }
 
-pca_plot(metadata_filepath, gene_data_filepath)
+
 
 
 
