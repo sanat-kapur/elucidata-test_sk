@@ -1,3 +1,2 @@
 export(pca_plot)
-
-@import ggplot2
+import(ggplot2)
