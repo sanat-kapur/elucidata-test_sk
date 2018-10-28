@@ -9,6 +9,6 @@ metadata_file & gene_data_file
 
 Example curl request:
 
-'''
+```
 curl http://cloud.opencpu.org/ocpu/apps/sanat-kapur/elucidatatest.sanat.kapur/R/pca_plot -F "metadata_file=@metadata.csv" -F "gene_data_file=@genedata.csv"
-''''
+```
