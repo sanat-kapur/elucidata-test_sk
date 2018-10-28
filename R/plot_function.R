@@ -13,8 +13,8 @@ pca_plot = function(metadata_file, gene_data_file) {
                          print("There was an error reading in the Gene Data CSV file. Please check error below.")
                        })
   
-  print(nrow(gene_data))
-  
+  return(nrow(gene_data))
+  """
   #convert all data columns to numeric
   for (i in 3:32) {
     gene_data[,i] = as.numeric(gene_data[,i])
@@ -37,7 +37,7 @@ pca_plot = function(metadata_file, gene_data_file) {
   
   return(plot)
 }
-
+"""
 
 
 
