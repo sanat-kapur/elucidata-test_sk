@@ -1,9 +1,3 @@
-#library(ggplot2)
-
-#metadata_filepath = "/Users/sanatkapur/OneDrive/Documents/ProgrammingProjects/elucidata_assignment/Assignment-2 Meta data sheet (2) (1) (1) (1).csv"
-
-#gene_data_filepath = "/Users/sanatkapur/OneDrive/Documents/ProgrammingProjects/elucidata_assignment/Assignment-2_gene_data- (2) (1) (1).csv"
-
 pca_plot = function(metadata_file, gene_data_file) {
   #read in metadata
   metadata = tryCatch(read.csv(metadata_filepath, colClasses = "character",
@@ -18,6 +12,8 @@ pca_plot = function(metadata_file, gene_data_file) {
                        error=function(e) {
                          print("There was an error reading in the Gene Data CSV file. Please check error below.")
                        })
+  
+  print(nrow(gene_data))
   
   #convert all data columns to numeric
   for (i in 3:32) {
